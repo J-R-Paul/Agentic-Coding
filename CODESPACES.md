@@ -17,7 +17,17 @@ If setup fails, save the exact error and tell the instructor. Once the problem i
 bash .devcontainer/setup.sh
 ```
 
-## Sign into Codex
+## Use the Codex extension in VS Code
+
+The Codespaces configuration automatically installs the official OpenAI Codex extension (`openai.chatgpt`) alongside the Python extension. This applies to the codespace in browser-based VS Code and when connecting through desktop VS Code. Open the Codex icon in the sidebar, or run **Codex: Open Codex Sidebar** from the Command Palette, then follow its sign-in instructions using your own account.
+
+For a codespace created before this configuration update, first bring the updated files into your repository and codespace, then run **Codespaces: Rebuild Container** from the Command Palette. Alternatively, install [the Codex extension](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) manually from the Extensions view.
+
+If you open the project as an ordinary local VS Code folder, `.vscode/extensions.json` recommends the same extensions. Accept VS Code's recommendation to install them; opening a local folder alone does not install them automatically.
+
+The terminal CLI is also available, as described below.
+
+## Sign into Codex CLI
 
 Open **Terminal → New Terminal** and run:
 
