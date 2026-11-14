@@ -19,7 +19,17 @@ bash .devcontainer/setup.sh
 
 ## Use the Codex extension in VS Code
 
-The Codespaces configuration automatically installs the official OpenAI Codex extension (`openai.chatgpt`) alongside the Python extension. This applies to the codespace in browser-based VS Code and when connecting through desktop VS Code. Open the Codex icon in the sidebar, or run **Codex: Open Codex Sidebar** from the Command Palette, then follow its sign-in instructions using your own account.
+The Codespaces configuration automatically installs the official OpenAI Codex extension (`openai.chatgpt`) alongside the Python extension. This applies to the codespace in browser-based VS Code and when connecting through desktop VS Code.
+
+**Enable device-code sign-in before signing into the extension in Codespaces:**
+
+1. Open [ChatGPT on the web](https://chatgpt.com) and sign into your own account.
+2. Go to **Settings → Security & login**.
+3. Turn on **Enable device code sign-in for Codex, Excel, PowerPoint, and Word**.
+4. Return to VS Code in your codespace. Open the Codex icon in the sidebar, or run **Codex: Open Codex Sidebar** from the Command Palette.
+5. Choose the device-code sign-in option. Open the link shown by the extension and enter its one-time code to complete sign-in with the same ChatGPT account.
+
+If the setting is unavailable or controlled by your organisation, tell the instructor before class so they can check the account route with your workspace administrator.
 
 For a codespace created before this configuration update, first bring the updated files into your repository and codespace, then run **Codespaces: Rebuild Container** from the Command Palette. Alternatively, install [the Codex extension](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) manually from the Extensions view.
 
@@ -29,7 +39,7 @@ The terminal CLI is also available, as described below.
 
 ## Sign into Codex CLI
 
-Open **Terminal → New Terminal** and run:
+First enable device-code sign-in in ChatGPT using steps 1–3 above. Then open **Terminal → New Terminal** and run:
 
 ```bash
 codex --version
@@ -37,7 +47,7 @@ python scripts/00_check_environment.py
 codex login --device-auth
 ```
 
-Open the sign-in link printed in the terminal, sign into **your own** ChatGPT account, and enter the one-time code. Device-code login may first need enabling in your ChatGPT security settings or by your workspace administrator. If this login method is unavailable, tell the instructor before class so they can verify another supported route for your account.
+Open the sign-in link printed in the terminal, sign into **your own** ChatGPT account, and enter the one-time code. If this login method is unavailable, tell the instructor before class so they can verify another supported route for your account.
 
 After login, run:
 
