@@ -1,0 +1,25 @@
+This is a worksheet, not an installed skill. Create your own SKILL.md and reference file in Exercise 04.
+
+---
+name: research-figure
+description: [Write when the skill should be used and what reusable task it performs.]
+---
+
+# [A clear title]
+
+## Read before acting
+[Point to the accompanying reference file and say when it must be read.]
+
+## Reusable workflow
+[Write the steps that should work for both a scatterplot and a grouped summary plot.]
+
+## Decisions and boundaries
+[State which research choices the skill must preserve and which presentation details it handles.]
+
+## Verify and report
+[State what to inspect in the saved figures and how to report a failed or unavailable check.]
+
+Reference file: references/figure-rules.md
+[Write your actual reusable figure conventions in that separate file.]
+
+Do not copy these bracketed instructions unchanged into the final skill. They are authoring questions, not working rules.
