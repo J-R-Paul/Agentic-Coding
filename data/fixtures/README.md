@@ -4,7 +4,7 @@ All values are synthetic course data, release 1.0.0.
 
 ## Hand-check fixture
 
-`missing_values_example.csv` is the eight-row fixture for Exercise 02. Work out the number of valid life
+`missing_values_example.csv` is an eight-row table for hand checks (card 05, *If ahead*). Work out the number of valid life
 satisfaction responses and their mean using the codebook before asking an
 agent to check the calculation. A commute of `0` for a remote worker, `-7` for
 a nonworker, and `-8`/`-9` for nonresponse have different meanings.
@@ -13,9 +13,9 @@ a nonworker, and `-8`/`-9` for nonresponse have different meanings.
 are 7, 8 and 5: count 3, missing count 2, mean 20/3. These results are also in
 `expected_missing_values.json` for a simple reproducible check.
 
-## Inputs for creating your research-figure skill
+## Inputs for your plotting skill (card 04)
 
-Use both `life_satisfaction_by_status.csv` and `care_hours_by_age.csv`. The
+Card 04 uses `care_hours_by_age.csv`, and `life_satisfaction_by_status.csv` if you're ahead. The
 first describes life satisfaction by employment status; the second describes
 weekly unpaid care by age group. Both were computed from the main raw survey
 after excluding only `-8` and `-9` in the summarised outcome. A respondent

@@ -1,5 +1,3 @@
-# Your research notes
+# Your notes
 
-Save the named exercise notes and session handovers here. Record your own choices, commands that actually work, evidence inspected, and unanswered questions. These files are part of your research record and can be committed with the work they explain.
-
-The starter contains no completed exercise notes. Use the relevant template when the exercise calls for one.
+Put your predictions and "watch and record" notes from the exercise cards here, one file per card if you like (e.g. `01-permissions.md`). You can also write them on paper.

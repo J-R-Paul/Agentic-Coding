@@ -56,7 +56,7 @@ response definitions. It contains valid zeroes, nonresponse and inapplicability
 so you can check a calculation by hand.
 
 `fixtures/life_satisfaction_by_status.csv` and `fixtures/care_hours_by_age.csv`
-are ready-made descriptive plotting inputs for Exercise 04. Their README
+are ready-made descriptive plotting inputs for card 04 (skills). Their README
 explains the columns and intervals. They contain no completed regression.
 
 ## Provenance

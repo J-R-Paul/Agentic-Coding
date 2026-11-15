@@ -1,87 +1,29 @@
-# Take the course in GitHub Codespaces
+# The browser-only route: GitHub Codespaces
 
-This route runs Python, Git and Codex CLI on a cloud computer. You use VS Code and its terminal in your browser; you do not need to install these programs on your laptop. You need a GitHub account with available Codespaces usage and your own eligible Codex account. Computing usage and AI usage have separate allowances.
+Use this if you can't install software on your laptop. Codespaces gives you VS Code in the browser, running on a cloud computer with Python, git, Codex and Claude Code already installed.
 
-Use the [student starter template repository](https://github.com/J-R-Paul/Agentic-Coding). Its root contains this file, `AGENTS.md`, `requirements-tested.txt`, `.devcontainer/`, `scripts/` and `data/`.
+**What you need**
 
-## Create your own project
+- A free GitHub account.
+- An agent account that works **inside VS Code**. That means a paid ChatGPT plan (Plus or above) for Codex, or a paid Claude plan for Claude Code. As far as we know, the free ChatGPT plan works only in the ChatGPT desktop app. If that's all you have, tell us before the course and we'll pair you with someone.
 
-1. Open the instructor's template repository on GitHub. Choose **Use this template → Create a new repository** and create a copy under your own account. Choose private visibility if you do not want to publish your work.
-2. In your new repository, choose **Code → Codespaces → Create codespace on main** (or the repository's default branch). A two-core machine is sufficient for the supplied analyses. Wait for the setup command to finish; the first build can take several minutes.
-3. Check that the setup log ends with `Course setup complete`. It installs Python packages and Codex CLI, checks the environment and data, and creates the first saved figure.
-4. In the file explorer, open `outputs/01-first-output/age_distribution.png`.
+## Set it up (about 15 minutes, before the course)
 
-If setup fails, save the exact error and tell the instructor. Once the problem is resolved, the setup command can be rerun in the terminal:
+1. On the course's GitHub page choose **Use this template → Create a new repository**. Make it **private**.
+2. In your new repository choose **Code → Codespaces → Create codespace**. Wait while it builds; the first time takes a few minutes.
+3. When the build log says **Course setup complete**, open `outputs/01-first-output/age_distribution.png` in the file list.
+4. Click the **Codex** or **Claude Code** icon in the left sidebar and sign in.
+   For Codex, first turn on device-code sign-in: at chatgpt.com go to **Settings → Security & login** and enable *device code sign-in*. Then choose that option in VS Code and enter the code it shows you.
+5. Ask the agent: *"Read AGENTS.md and tell me how to run Python in this project."*
 
-```bash
-bash .devcontainer/setup.sh
-```
+If something fails, copy the error and email it to us.
 
-## Use the Codex extension in VS Code
+## Keep your work
 
-The Codespaces configuration automatically installs the official OpenAI Codex extension (`openai.chatgpt`) alongside the Python extension. This applies to the codespace in browser-based VS Code and when connecting through desktop VS Code.
+- Ask the agent to **commit and push** your changes; your repository is where your work lives.
+- Figures in `outputs/` are not saved to git. To keep them, right-click a file and choose **Download**.
+- Stop the codespace when you're done (github.com/codespaces). You can reopen the same one later.
 
-**Enable device-code sign-in before signing into the extension in Codespaces:**
+## On the day
 
-1. Open [ChatGPT on the web](https://chatgpt.com) and sign into your own account.
-2. Go to **Settings → Security & login**.
-3. Turn on **Enable device code sign-in for Codex, Excel, PowerPoint, and Word**.
-4. Return to VS Code in your codespace. Open the Codex icon in the sidebar, or run **Codex: Open Codex Sidebar** from the Command Palette.
-5. Choose the device-code sign-in option. Open the link shown by the extension and enter its one-time code to complete sign-in with the same ChatGPT account.
-
-If the setting is unavailable or controlled by your organisation, tell the instructor before class so they can check the account route with your workspace administrator.
-
-For a codespace created before this configuration update, first bring the updated files into your repository and codespace, then run **Codespaces: Rebuild Container** from the Command Palette. Alternatively, install [the Codex extension](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) manually from the Extensions view.
-
-If you open the project as an ordinary local VS Code folder, `.vscode/extensions.json` recommends the same extensions. Accept VS Code's recommendation to install them; opening a local folder alone does not install them automatically.
-
-The terminal CLI is also available, as described below.
-
-## Sign into Codex CLI
-
-First enable device-code sign-in in ChatGPT using steps 1–3 above. Then open **Terminal → New Terminal** and run:
-
-```bash
-codex --version
-python scripts/00_check_environment.py
-codex login --device-auth
-```
-
-Open the sign-in link printed in the terminal, sign into **your own** ChatGPT account, and enter the one-time code. If this login method is unavailable, tell the instructor before class so they can verify another supported route for your account.
-
-After login, run:
-
-```bash
-codex
-```
-
-Begin with a small read-only task, such as: “Read AGENTS.md and tell me which interpreter and commands to use for the course checks.” A successful setup log alone does not establish AI access or sufficient allowance. Review permission requests and keep the course's normal approval settings.
-
-The workspace is configured to put `.venv/bin` on the remote command path. `python` should therefore use the course environment; the explicit `.venv/bin/python` commands in the main README also work. Codex runs in this cloud project and can use its files and Python environment.
-
-## Save and resume
-
-Save your files, then commit and push the project changes you want to keep to your own repository. The supplied `.gitignore` excludes `outputs/`, so download figures, tables and other output files separately if you want copies outside the codespace. Download a file using its context menu in the file explorer.
-
-Stop the codespace when you finish, and reopen the same one from <https://github.com/codespaces> to continue. Stopping releases compute; storage continues to count towards your allowance. Codespaces can be deleted after inactivity. Before deleting one, push source changes and download any outputs you need.
-
-Do not share Codex credentials or add them to your repository. If you need to end your login, use `codex logout`. A rebuilt or new container may require another login.
-
-## Start the capstone
-
-When the instructor releases the capstone, create an empty folder outside the starter project, for example:
-
-```bash
-mkdir -p /workspaces/northbridge-capstone
-cd /workspaces/northbridge-capstone
-codex
-```
-
-Put the separately supplied client pack in this new project and configure it intentionally, following `START-HERE.md`. Do not copy the whole starter project. The starter's Python environment remains on the command path in this codespace; your project files, instructions and Git repository should be separate. `/workspaces` persists across container rebuilds, but files outside your starter repository are not included when you push that repository. Save or publish the capstone separately before deleting the codespace.
-
-## Official references
-
-- [Codespaces configuration](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-- [Codespaces usage and billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces)
-- [Codex CLI installation](https://github.com/openai/codex#quickstart)
-- [Codex remote and device-code authentication](https://learn.chatgpt.com/docs/auth#login-on-headless-devices)
+Everything works the same as on a laptop. Where a card says "your app", use the VS Code instructions.

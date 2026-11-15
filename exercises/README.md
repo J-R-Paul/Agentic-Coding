@@ -1,18 +1,20 @@
-# Student exercises
+# Exercise cards
 
-Work from the `student-project` folder. Complete the environment check described in the course setup before the first exercise. The primary runnable materials use Python 3.10 or later. You may translate them to R if you can support that environment yourself; the supplied scripts and tested reference environment are Python, and R execution has not been validated.
+| Card | Part of the day | Core |
+|---|---|---|
+| [01 Permissions](01-permissions.md) | Tools and permissions | Watch which actions ask, and find out why |
+| [02 Context](02-context.md) | Context and tokens | See what fills the context |
+| [03 AGENTS.md](03-agents-md.md) | AGENTS.md | Give a folder its own README |
+| [04 Skills](04-skills.md) | Skills | Build your plotting skill |
+| [05 Git](05-git.md) | Git | Commit, change, undo, all by asking |
+| [06 Specs](06-specs.md) | Spec-driven development | Project files, then one spec from plan to check |
+| [07 Second agent](07-second-agent.md) | Subagent verification | Have a second agent check the work |
 
-| Exercise | Time | Main outcome |
-|---|---:|---|
-| 01 First output and permissions | 25 minutes | A bounded task, saved figure and observed action trace |
-| 02 A script that runs but is wrong | 30 minutes | An evidence-backed repair and reviewed git change |
-| 03 Instructions and a fresh session | 25 minutes | A usable project briefing and handover |
-| 04 Create a research-figure skill | 40 minutes | Your own reusable skill, tried on two different inputs and revised |
-| 05 Specify one regression work item | 55 minutes | Student-owned decisions, an approved scoped spec and implemented analysis |
-| 06 Review with evidence | 30 minutes | An audit, one repair round if needed, and an honest handover |
+## How the cards work
 
-Each brief contains an exact starting prompt, checks, a stopping point, an extension and a low-usage route. Suggested prompts name canonical skill files explicitly so the exercise does not depend on automatic discovery. Permissions and traces differ between applications; record what actually happens.
-
-Only `spec`, `implement-spec` and `review-spec` are supplied as completed skills. You create `research-figure` in Exercise 04. A project roadmap is broader than a work-item spec: the former can list later tasks; the latter must have one independently checkable completion criterion.
-
-Use local, fully simulated data. Do not substitute personal, confidential or restricted research data for these exercises. Project instructions are guidance, not a security mechanism, and no exercise requires hidden instructions that make an agent behave badly.
+- **Core** is the part everyone does. When you've done it, carry on to **If ahead**. Nobody is expected to finish every part.
+- **Predict first**: write down your guess before you send the prompt. Being wrong is the useful part.
+- Paste the prompts as they are, or put them in your own words. You approve or decline whatever the agent asks to do.
+- **Watch and record**: your app may behave differently from your neighbour's. Write down what actually happened, in `notes/` or on paper.
+- **Out of allowance?** Pair up: one person types, both of you predict and check.
+- Each card starts from the project as you received it, except that 06 builds on itself step by step. Fell behind? Just start the next card.
