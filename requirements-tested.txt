@@ -1,5 +1,5 @@
-# Exact environment used for this release's execution checks: Python 3.12.14.
-# Use requirements.txt for an older compatible Python interpreter.
+# Exact versions for the Codespaces container (Python 3.12). Laptops use
+# requirements.txt instead: these pins may have no prebuilt packages for newer Pythons.
 numpy==2.3.5
 pandas==2.2.3
 matplotlib==3.10.8
