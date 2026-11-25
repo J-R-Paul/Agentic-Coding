@@ -5,7 +5,7 @@ Use this if you can't install software on your laptop. Codespaces gives you VS C
 **What you need**
 
 - A free GitHub account.
-- An agent account that works **inside VS Code**. That means a paid ChatGPT plan (Plus or above) for Codex, or a paid Claude plan for Claude Code. As far as we know, the free ChatGPT plan works only in the ChatGPT desktop app. If that's all you have, tell us before the course and we'll pair you with someone.
+- A ChatGPT account for Codex (a free one is enough), or a paid Claude plan for Claude Code.
 
 ## Set it up (about 15 minutes, before the course)
 
@@ -26,4 +26,4 @@ If something fails, copy the error and email it to us.
 
 ## On the day
 
-Everything works the same as on a laptop. Where a card says "your app", use the VS Code instructions.
+Everything works the same as on a laptop, because it is the same VS Code. Where an exercise says "your app", use the VS Code instructions.

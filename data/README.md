@@ -3,7 +3,7 @@
 **Release 1.0.0. All 2,000 records are simulated. There are no real respondents.**
 
 The file `raw/work_care_wellbeing.csv` contains one row per fictional adult,
-aged 18–85. It is a single cross-section for practising research workflows.
+aged 18–85. It is a single cross-section.
 It is not a sample of a real population, has no survey weights, and cannot
 establish facts about actual people or places. Associations are not causal
 effects. Keep the raw CSV unchanged; make transformations in a script.
@@ -56,17 +56,15 @@ response definitions. It contains valid zeroes, nonresponse and inapplicability
 so you can check a calculation by hand.
 
 `fixtures/life_satisfaction_by_status.csv` and `fixtures/care_hours_by_age.csv`
-are ready-made descriptive plotting inputs for card 04 (skills). Their README
-explains the columns and intervals. They contain no completed regression.
+are ready-made summary tables for plotting. Their README explains the columns
+and intervals. They contain no completed regression.
 
 ## Provenance
 
-Created for this course using a fixed, instructor-held simulation script,
-NumPy seed **20261107**, and release **1.0.0**. No third-party microdata or
-personal records were used. Values are bounded for teaching convenience and
-the distributions are not calibrated to national statistics. Nonresponse was
+Created with a fixed simulation script, NumPy seed **20261107**, release
+**1.0.0**. No third-party microdata or personal records were used. Values are
+bounded for convenience and the distributions are not calibrated to national
+statistics. Nonresponse was
 inserted independently of the generated outcomes within eligible fields; this
-does not imply that nonresponse in real surveys is random. The instructor
-package contains the generator, version information and file digests. Follow
-the course licence for reuse. Attribute figures to “Synthetic course survey,
-release 1.0.0”; never describe them as observed population evidence.
+does not imply that nonresponse in real surveys is random. Never describe
+results as observed population evidence.

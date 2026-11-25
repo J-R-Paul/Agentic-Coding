@@ -1,4 +1,4 @@
-"""A small pre-course check. This script reads no data and changes no files."""
+"""Check the Python environment. Reads no data and changes no files."""
 import importlib
 import sys
 
@@ -13,5 +13,5 @@ for name in ["numpy", "pandas", "matplotlib", "scipy"]:
     except ImportError:
         missing.append(name)
 if missing:
-    raise SystemExit("Missing packages: " + ", ".join(missing) + ". Use the course setup instructions.")
-print("Environment check passed. This does not test AI account access.")
+    raise SystemExit("Missing packages: " + ", ".join(missing) + ". See the setup prompt in README.md.")
+print("Environment check passed.")

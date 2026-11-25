@@ -1,7 +1,7 @@
 # Ask-first settings for Codex
 #
 # While this file sits here in permissions/, it does nothing.
-# Exercise 01 asks the agent to copy it to .codex/config.toml, which
+# To switch it on, ask the agent to copy it to .codex/config.toml. That
 # switches it on for this project (Codex reads .codex/config.toml only in a
 # folder you have chosen to trust). Start a new chat after switching it on or off.
 #

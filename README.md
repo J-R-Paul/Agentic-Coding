@@ -1,6 +1,6 @@
 # Agentic coding for social scientists: course project
 
-This is the project you will work in during the course (Heriot-Watt, Thursday 26 November 2026). It holds a **simulated** survey of 2,000 adults covering work, care and wellbeing, a few small scripts, and the exercise cards.
+This is the project you will work in during the course (Heriot-Watt, Thursday 26 November 2026). It holds a **simulated** survey of 2,000 adults covering work, care and wellbeing, and a few small scripts.
 
 You won't need to type commands. You ask the agent, it proposes what to run, and you approve or decline.
 
@@ -12,27 +12,35 @@ On the course's GitHub page choose **Code → Download ZIP**, then unzip it some
 
 (Can't install software on your laptop? Use [the browser-only route](CODESPACES.md) instead.)
 
-### 2. Install an agent
+### 2. Install VS Code
 
-Install the **ChatGPT desktop app** and sign in with your ChatGPT account. A free account is enough. Open Codex in the app.
+Download **VS Code** from [code.visualstudio.com](https://code.visualstudio.com), install it and open it. It's a free editor: your files and the agent sit side by side in one window.
 
-If you already use Claude Code, or Codex in VS Code, you can use that instead. Each exercise card says where your app differs.
+### 3. Add an agent to VS Code
 
-### 3. Open the project
+1. Open the Extensions view: click the icon of four squares in the left-hand bar, or choose **View → Extensions**.
+2. Search for **Codex** and install *Codex – OpenAI's coding agent* (publisher: OpenAI).
+3. Click the Codex icon that appears in the left-hand bar and sign in with your ChatGPT account. A free account is enough.
 
-In the app, open this folder (the one containing this README) as your project. When it asks whether to **trust** the folder, say yes.
+If you already use Claude, you can install the **Claude Code** extension (publisher: Anthropic) instead.
 
-### 4. Paste the setup prompt
+Prefer a dedicated app? The ChatGPT desktop app (which includes Codex) or the Claude desktop app work too. The exercises say where your app differs. In step 4, open the folder from inside the app instead.
+
+### 4. Open the project
+
+In VS Code choose **File → Open Folder…** and pick this folder (the one containing this README). When VS Code asks whether you **trust** the authors of the files, say yes. Then open the agent's panel from the left-hand bar; if the agent also asks whether to trust the folder, say yes again.
+
+### 5. Paste the setup prompt
 
 Copy this into the chat:
 
 > Set up this project for the course. Find a Python 3.10 or newer on this computer. Create a Python environment called `.venv` inside this folder and install `requirements.txt` into it. Then use that environment to run `scripts/00_check_environment.py`, `scripts/check_data.py` and `scripts/01_first_output.py`. Also check whether git is installed. Tell me in plain words what worked, what didn't, and what I need to do.
 
-The agent will ask to use the internet to download packages. Read the request, then approve it.
+The agent will ask, in its panel, to use the internet to download packages. Read the request, then approve it.
 
 If Python or git is missing, ask the agent to explain how to install it on your computer, then follow its steps. It can't install system software for you without your approval.
 
-### 5. Check it worked
+### 6. Check it worked
 
 You're ready when:
 
@@ -44,7 +52,7 @@ If you get stuck, copy the agent's last message and email it to us before the co
 
 ## On the day
 
-The exercise cards are in `exercises/`. We'll tell you when to start each one. Every card has a **Core** part, plus **If ahead** parts for anyone who finishes early.
+We'll give you the exercises on the day, as a separate handout. They are not in this folder.
 
 ## What's in here
 
@@ -54,9 +62,8 @@ The exercise cards are in `exercises/`. We'll tell you when to start each one. E
 | `data/raw/work_care_wellbeing.csv` | The survey. Never edit it. |
 | `data/README.md` | The codebook. Read it before trusting any number. |
 | `data/fixtures/` | Small tables for plotting and hand checks |
-| `scripts/` | Small analysis scripts. One of them is deliberately wrong. |
-| `exercises/` | The exercise cards |
-| `permissions/ask-first.toml` | Strict permission settings, used in Exercise 01 |
+| `scripts/` | Small analysis scripts |
+| `permissions/ask-first.toml` | Strict permission settings. They do nothing until you switch them on. |
 | `.agents/skills/` | Skills for Codex (`.claude/skills/` is the same, for Claude Code) |
 | `specs/`, `notes/` | Where your specs and notes go |
 
