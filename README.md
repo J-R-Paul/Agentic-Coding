@@ -24,7 +24,7 @@ Download **VS Code** from [code.visualstudio.com](https://code.visualstudio.com)
 
 If you already use Claude, you can install the **Claude Code** extension (publisher: Anthropic) instead.
 
-Prefer a dedicated app? The ChatGPT desktop app (which includes Codex) or the Claude desktop app work too. The exercises say where your app differs. In step 4, open the folder from inside the app instead.
+Prefer a dedicated app? The ChatGPT desktop app (which includes Codex) or the Claude desktop app work too. In step 4, open the folder from inside the app instead.
 
 ### 4. Open the project
 
@@ -50,10 +50,6 @@ You're ready when:
 
 If you get stuck, copy the agent's last message and email it to us before the course. Please don't spend your free allowance asking it to retry the same thing over and over.
 
-## On the day
-
-The exercises are in `exercises.pdf` in this folder. We'll work through them together on the day.
-
 ## What's in here
 
 | Path | What it is |
@@ -67,4 +63,4 @@ The exercises are in `exercises.pdf` in this folder. We'll work through them tog
 | `.agents/skills/` | Skills for Codex (`.claude/skills/` is the same, for Claude Code) |
 | `specs/`, `notes/` | Where your specs and notes go |
 
-All the data are invented. Don't bring real or confidential research data to these exercises.
+All the data are invented. Don't bring real or confidential research data to the course.
