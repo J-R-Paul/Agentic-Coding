@@ -52,7 +52,7 @@ If you get stuck, copy the agent's last message and email it to us before the co
 
 ## On the day
 
-We'll give you the exercises on the day, as a separate handout. They are not in this folder.
+The exercises are in `exercises.pdf` in this folder. We'll work through them together on the day.
 
 ## What's in here
 
